@@ -1,4 +1,4 @@
-#/bin/bash
+extract_apk_db() {
   if [ $# -ne 2 ]; then
     echo "Usage: extract_apk_db <backup_file.ab> <output_folder>"
     return 1
@@ -48,3 +48,4 @@
 
   echo "Successfully extracted, untarred, and zipped $1 to '$output_folder.zip'."
 
+}

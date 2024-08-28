@@ -1,5 +1,5 @@
 #/bin/bash
-  if [ $# -ne 3 ]; then
+  if [ $# -ne 2 ]; then
     echo "Usage: extract_apk_db <backup_file.ab> <output_folder>"
     return 1
   fi
@@ -47,3 +47,4 @@
   rm "$temp_tar_file" 
 
   echo "Successfully extracted, untarred, and zipped $1 to '$output_folder.zip'."
+
